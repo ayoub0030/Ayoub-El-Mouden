@@ -6,9 +6,23 @@ import leaf from "../../Assets/Projects/leaf.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import brightWay from "../../Assets/Projects/brightWay-child-profiles-Crud.png"
+import brightwayTask from "../../Assets/Projects/brightWayTask.png"
+import brightwayChildTask from "../../Assets/Projects/brightWayChildTask.png"
+import brightwayChat from "../../Assets/Projects/brightWayChat.png"
+import eduDesk from "../../Assets/Projects/eduDesk/eduDesk.png"
+import eduDeskTask from "../../Assets/Projects/eduDesk/eduDeskTask.png"
+import eduDeskChildTask from "../../Assets/Projects/eduDesk/eduDeskChildTask.png"
+import eduDeskChat from "../../Assets/Projects/eduDesk/eduDeskChat.png"
+
+
+
+
+
 
 // Additional images for project details
-const chatifyAdditional = [chatify, leaf, bitsOfCode];
+const brightwayAdditional = [brightWay , brightwayTask, brightwayChildTask, brightwayChat];
+const eduDeskAdditional = [eduDesk , eduDeskTask, eduDeskChildTask, eduDeskChat];
 const leafAdditional = [leaf, chatify, bitsOfCode];
 const blogAdditional = [bitsOfCode, chatify, leaf];
 const editorAdditional = [editor, chatify, bitsOfCode];
@@ -22,24 +36,25 @@ function ProjectsHome() {
           <strong className="purple">Recent Works </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              fullDescription="Chatify is a comprehensive chat application designed to create personal chat rooms or workspaces where friends can collaborate, share resources, and communicate in real-time. Built with modern web technologies, it offers a seamless and intuitive user experience with a focus on real-time interaction and media sharing capabilities."
-              technologies={["React.js", "Material-UI", "Firebase", "Firestore", "Authentication", "Cloud Storage"]}
+              title="BrightPath"
+              description="BrightPath is a playful, kid-focused task manager that keeps children motivated and organized, while parents create tasks, set deadlines, reward achievements, and see real-time progress or get alerts if anything goes wrong."
+              fullDescription="BrightPath is a playful, kid-focused task manager that keeps children motivated and organized, while parents create tasks, set deadlines, reward achievements, and see real-time progress or get alerts if anything goes wrong."
+              technologies={["React.js", "Material-UI", "Supabase", "gemini-1.5-pro", "Authentication", "ScreenPipe"]}
               features={[
-                "Real-time messaging with instant updates",
-                "Image and file sharing capabilities",
-                "Emoji reactions to messages",
-                "User authentication and profile management",
-                "Responsive design for mobile and desktop",
-                "Dark mode support"
-              ]}
-              additionalImages={chatifyAdditional}
-              ghLink="https://github.com/ayoub0030/Chatify"
+                "Task Creation & Scheduling with customizable deadlines",
+                "Real-Time Monitoring & Progress Tracking for parents",
+                "Interactive Kid Interface with engaging visuals",
+                "Reward System & Gamification for motivation",
+                "Notifications & Reminders for both parents and kids",
+                "Detailed Analytics & Insights for performance tracking"
+            ]}
+            
+              additionalImages={brightwayAdditional}
+              ghLink="https://github.com/ayoub0030/parentale-assistante"
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
@@ -48,21 +63,23 @@ function ProjectsHome() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              fullDescription="Bits-0f-C0de is a modern, responsive blog platform that allows for easy content creation and management. Built with Next.js and styled with Tailwind CSS, it provides an optimal reading experience across all devices while maintaining high performance standards. The blog supports markdown for easy content creation and includes features like dark mode for comfortable reading in any environment."
+              title="edu-Desk"
+              description="EduDesk is a monitoring solution for schools computers , ensuring digital security and academic integrity. It detects threats, prevents cheating, and tracks student engagement—all while keeping data private and secure."
+              fullDescription="EduDesk is an on-premise monitoring solution designed to enhance digital security and uphold academic integrity in educational institutions. By analyzing screen and audio activity in real time, it detects security threats, prevents cheating during exams, and tracks student engagement. Unlike cloud-based solutions, EduDesk processes all data locally, ensuring complete privacy and compliance with strict data protection standards. With seamless integration into existing school IT infrastructure and an intuitive dashboard for real-time insights, EduDesk provides a reliable and efficient way to create a safe and fair digital learning environment."
               technologies={["Next.js", "Tailwind CSS", "Markdown", "React", "Vercel"]}
               features={[
-                "Responsive design for all devices",
-                "Markdown support for easy content creation",
-                "Dark mode toggle for comfortable reading",
-                "Static site generation for improved performance",
-                "SEO optimized structure",
-                "Fast page transitions"
+                "Real-time security threat detection and alerts",
+                "Academic integrity enforcement during exams",
+                "Student engagement tracking for educators",
+                "Local data processing for privacy and security",
+                "Intuitive dashboard with real-time insights and visual analytics",
+                "Automatic malware detection and prevention",
+                "Behavior analysis to identify potential cheating activities"
               ]}
-              additionalImages={blogAdditional}
-              ghLink="https://github.com/ayoub0030/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              
+              additionalImages={eduDeskAdditional}
+              ghLink="https://github.com/ayoub0030/eduDesk"
+              demoLink="https://blog"
             />
           </Col>
 

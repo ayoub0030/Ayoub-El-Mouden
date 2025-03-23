@@ -30,20 +30,21 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              fullDescription="Chatify is a comprehensive chat application designed to create personal chat rooms or workspaces where friends can collaborate, share resources, and communicate in real-time. Built with modern web technologies, it offers a seamless and intuitive user experience with a focus on real-time interaction and media sharing capabilities."
-              technologies={["React.js", "Material-UI", "Firebase", "Firestore", "Authentication", "Cloud Storage"]}
+              title="BrightPath"
+              description="BrightPath is a playful, kid-focused task manager that keeps children motivated and organized, while parents create tasks, set deadlines, reward achievements, and see real-time progress or get alerts if anything goes wrong."
+              fullDescription="BrightPath is a playful, kid-focused task manager that keeps children motivated and organized, while parents create tasks, set deadlines, reward achievements, and see real-time progress or get alerts if anything goes wrong."
+              technologies={["React.js", "Material-UI", "Supabase", "gemini-1.5-pro", "Authentication", "ScreenPipe"]}
               features={[
-                "Real-time messaging with instant updates",
-                "Image and file sharing capabilities",
-                "Emoji reactions to messages",
-                "User authentication and profile management",
-                "Responsive design for mobile and desktop",
-                "Dark mode support"
-              ]}
+                "Task Creation & Scheduling with customizable deadlines",
+                "Real-Time Monitoring & Progress Tracking for parents",
+                "Interactive Kid Interface with engaging visuals",
+                "Reward System & Gamification for motivation",
+                "Notifications & Reminders for both parents and kids",
+                "Detailed Analytics & Insights for performance tracking"
+            ]}
+            
               additionalImages={chatifyAdditional}
-              ghLink="https://github.com/ayoub0030/Chatify"
+              ghLink="https://github.com/ayoub0030/parentale-assistante"
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
