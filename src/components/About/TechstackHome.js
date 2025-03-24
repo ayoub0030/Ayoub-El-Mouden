@@ -4,13 +4,14 @@ import { Container, Row, Col } from "react-bootstrap";
 function TechstackHome() {
   const skills = [
     { name: "VisualBasic", percentage: 80 },
-    { name: "C/C++", percentage: 70 },
-    { name: "BASH/Shell", percentage: 65 },
-    { name: "HTML/CSS/JS", percentage: 75 },
-    { name: "PHP", percentage: 75 },
-    { name: "Python", percentage: 70 },
-    { name: "SQL/PLSQL", percentage: 65 },
-    { name: "Arduino", percentage: 85 }
+    { name: "Make/Zappier", percentage: 75 },
+    { name: "Express.js", percentage: 70 },
+    { name: "React.js", percentage: 85 },
+    { name: "Node.js", percentage: 70 },
+    { name: "Python", percentage: 75 },
+    { name: "Firebase", percentage: 70 },
+    { name: "Hugging Face", percentage: 80 },
+    { name: "Arduino", percentage: 65 }
   ];
 
   return (

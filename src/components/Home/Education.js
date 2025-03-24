@@ -9,7 +9,7 @@ function Education() {
           <span style={{ color: "white" }}>My</span> <span className="purple">Education</span>
         </h1>
         <p style={{ color: "white", textAlign: "center" }}>
-          My academic journey and certifications
+          My academic journey 
         </p>
         
         <div className="education-timeline">
@@ -33,9 +33,9 @@ function Education() {
               <span className="purple">09/2023 - 06/2024</span>
             </div>
             <div className="timeline-content">
-              <h3>Higher School of Technology</h3>
-              <p className="degree">Professional Bachelor's Degree</p>
-              <p className="field">Field: Infrastructure, Processing, and Analysis of Big Data</p>
+              <h3> Ben M’Sik University </h3>
+              <p className="degree">Bachelor Degree</p>
+              <p className="field">Field: Software Engineering & Data Bases</p>
             </div>
           </div>
 
@@ -43,12 +43,12 @@ function Education() {
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="timeline-date">
-              <span className="purple">10/2021 - 07/2023</span>
+              <span className="purple">10/2021 - 06/2023</span>
             </div>
             <div className="timeline-content">
-              <h3>EMSI CENTRE CASABLANCA</h3>
-              <p className="degree">Computer Science Engineering</p>
-              <p className="field">Field: Software Engineering</p>
+              <h3>Ben M’Sik University</h3>
+              <p className="degree">Deug Degree</p>
+              <p className="field">Field: Mathematics and Computer Science</p>
             </div>
           </div>
 
@@ -56,10 +56,10 @@ function Education() {
           <div className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="timeline-date">
-              <span className="purple">2019 - 2020</span>
+              <span className="purple">2020 - 2021</span>
             </div>
             <div className="timeline-content">
-              <h3>LYCÉE EL-OULAA</h3>
+              <h3>LYCÉE MOSTAFA AL MAANI</h3>
               <p className="degree">Baccalaureat</p>
               <p className="field">Mathematical Science</p>
             </div>

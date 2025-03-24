@@ -6,9 +6,40 @@ import BlogCard from "./BlogCard";
 import blogImage1 from "../../Assets/Projects/blog.png";
 import blogImage2 from "../../Assets/Projects/leaf.png";
 import blogImage3 from "../../Assets/Projects/chatify.png";
+import blogImage4 from "../../Assets/Projects/codeEditor.png";
 
 function Blog() {
   const blogPosts = [
+    {
+      id: 4,
+      title: "Aux États-Unis, l'intelligence artificielle remplace déjà les professeurs !",
+      date: "March 24, 2025",
+      image: blogImage4,
+      excerpt: "L'Unbound Academy, une école en ligne qui devrait ouvrir ses portes dans l'État d'Arizona à la rentrée 2025, inquiète la communauté éducative mondiale. Et pour cause : les élèves étudieront les matières de base en utilisant un tuteur d'apprentissage basé sur une IA.",
+      content: `
+        <p>L'intelligence artificielle s'invite de façon surprenante dans l'État de l'Arizona, où une école devrait être lancée à l'automne. Il s'agit de l'Unbound Academy, dont l'ouverture a été approuvée par le Conseil d'État de l'Arizona en 2024. Avec 250 élèves attendus, du CM1 à la quatrième, l'école donnera la priorité à l'IA dans l'enseignement de la grammaire, des mathématiques, de la lecture… L'ouverture de cette école s'inscrit dans une évolution continue de l'utilisation de l'IA dans les salles de classe américaines.</p>
+        
+        <p>Mais, bien avant l'apparition des chatbots, les États-Unis nourrissaient déjà, dans les années 1930, le fantasme d'un enseignement automatisé. Un rêve issu du monde des sciences sociales, en particulier du behaviorisme. « Un psychologue américain appartenant à ce mouvement, B.F. Skinner, a inventé des teaching machines qui, en fonction des réponses des élèves, leur faisaient un feedback en vue d'automatiser l'apprentissage. L'idée n'était pas de remplacer les professeurs, mais de rendre accessible l'éducation de manière plus démocratique », rappelle Antoine Amiel, CEO de Learn Assembly.</p>
+        
+        <h3>Une évolution logique dans le contexte américain</h3>
+        <p>L'autre élément à prendre en considération pour expliquer ce phénomène est qu'Outre Atlantique, la recherche d'efficacité, de performance, d'optimisation touche tous les domaines. L'éducation n'y échappe pas. « C'est devenu un dogme. Alors que la réussite scolaire est une conjonction de facteurs psychologiques et socio-économiques, on a parfois tendance à aller au plus simple en estimant que la technologie va résoudre tous les problèmes. Cela est notamment dû aux discours commerciaux d'éditeurs de logiciels », pointe-t-il.</p>
+        
+        <p>En effet, le marché de l'éducation et de la formation américain est totalement libéralisé. Les acteurs étant en concurrence, des écoles ou des entreprises pourraient être tentées de se passer de professeurs ou de formateurs. « Mais la question qui se pose est de savoir si les parents d'élèves voudront suivre ce mouvement et si l'efficacité pédagogique de ce modèle sera au rendez-vous. Selon moi, ce phénomène restera marginal », nuance Antoine Amiel.</p>
+        
+        <h3>Des remparts contre ce type d'initiatives en France</h3>
+        <p>En France, c'est la prudence, le RGPD et maintenant l'AI Act qui orientent les politiques éducatives et le choix des outils pédagogiques. Le code de l'éducation donne par exemple un cadre pédagogique au sujet de l'accès aux écrans et de l'usage de l'IA générative. On y lit notamment que « à l'issue de l'école primaire et du collège, les élèves reçoivent une attestation, certifiant qu'ils ont bénéficié d'une sensibilisation au bon usage des outils numériques et de l'intelligence artificielle (…) ainsi qu'aux dérives et aux risques liés à ces outils ».</p>
+        
+        <p>À ce stade, il serait donc impensable que de telles pratiques puissent émerger dans le paysage éducatif français. « Malgré cela, certaines personnes ont tendance à agiter le chiffon rouge en disant que l'IA va remplacer les professeurs. Elles le font pour ne pas faire évoluer leurs propres pratiques, pour ne pas réfléchir aux usages du numérique à l'école. C'est un prétexte de conservatisme », estime Antoine Amiel.</p>
+        
+        <h3>Pour une IA de renfort</h3>
+        <p>Pour autant, la crainte que peut susciter le remplacement des professeurs par l'IA ne doit pas se répercuter sur les apports positifs que celle-ci peut avoir dans l'enseignement. « Aujourd'hui, on sait qu'on a besoin d'adapter les parcours pédagogiques aux particularités des élèves ou des adultes qui se forment. Si l'IA peut permettre de réaliser cet objectif, c'est tant mieux », affirme Antoine Amiel.</p>
+        
+        <p>Pour lui, les start-up qui sont positionnées sur ce sujet n'ont en aucun cas l'ambition de remplacer les professeurs. « Elles savent très bien que c'est le meilleur moyen de se saborder. Ce qu'elles souhaitent, c'est que l'IA soit un renfort pour les professeurs, qu'elle les aide à avoir plus de proximité avec leurs élèves, à faire du mentorat », dit-il.</p>
+        
+        <p>En d'autres termes, que le meilleur moyen d'éviter de prendre la trajectoire américaine est de soutenir les EdTech convaincues que l'enseignement doit se baser sur les interactions humaines et la socialisation. « Il faudrait que l'Europe et la France soutiennent leurs acteurs de l'éducation, les fassent émerger, les financent. C'est le seul moyen pour ne pas être dans une situation de dépendance numérique totale aux outils des géants américains », conclut-il.</p>
+      `,
+      tags: ["IA", "Education", "EdTech", "Enseignement"]
+    },
     {
       id: 1,
       title: "Building Modern Web Applications with React",
@@ -30,7 +61,7 @@ function Blog() {
         </ul>
         
         <h3>Best Practices</h3>
-        <p>When building React applications, it's important to follow certain best practices:</p>
+        <p>When building React applications, it's essential to follow certain best practices:</p>
         <ol>
           <li>Keep components small and focused on a single responsibility</li>
           <li>Use functional components and hooks instead of class components when possible</li>

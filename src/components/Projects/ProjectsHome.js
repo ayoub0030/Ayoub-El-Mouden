@@ -18,7 +18,7 @@ import rescueLogo from "../../Assets/Projects/RescueAI/rescueLogo.png"
 import rescue1 from "../../Assets/Projects/RescueAI/rescue1.png"
 import rescue2 from "../../Assets/Projects/RescueAI/rescue2.png"
 import rescue3 from "../../Assets/Projects/RescueAI/rescue3.png"
-
+import eduDeskLogo from "../../Assets/Projects/eduDesk/eduDeskLogo.png"
 
 
 
@@ -63,7 +63,7 @@ function ProjectsHome() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={eduDesk}
+              imgPath={eduDeskLogo}
               isBlog={false}
               title="edu-Desk"
               description="EduDesk is a monitoring solution for schools computers , ensuring digital security and academic integrity. It detects threats, prevents cheating, and tracks student engagement—all while keeping data private and secure."
