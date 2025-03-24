@@ -18,7 +18,7 @@ function Home2() {
               <br />
               <br />I am fluent in cla like
               <i>
-                <b className="purple">  Javascript  </b>
+                <b className="purple">  Java  </b>
               </i>
               <br />
               <br />
