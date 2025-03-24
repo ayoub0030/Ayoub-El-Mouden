@@ -14,8 +14,10 @@ import eduDesk from "../../Assets/Projects/eduDesk/eduDesk.png"
 import eduDeskTask from "../../Assets/Projects/eduDesk/eduDeskTask.png"
 import eduDeskChildTask from "../../Assets/Projects/eduDesk/eduDeskChildTask.png"
 import eduDeskChat from "../../Assets/Projects/eduDesk/eduDeskChat.png"
-
-
+import rescueLogo from "../../Assets/Projects/RescueAI/rescueLogo.png"
+import rescue1 from "../../Assets/Projects/RescueAI/rescue1.png"
+import rescue2 from "../../Assets/Projects/RescueAI/rescue2.png"
+import rescue3 from "../../Assets/Projects/RescueAI/rescue3.png"
 
 
 
@@ -23,7 +25,7 @@ import eduDeskChat from "../../Assets/Projects/eduDesk/eduDeskChat.png"
 // Additional images for project details
 const brightwayAdditional = [brightWay , brightwayTask, brightwayChildTask, brightwayChat];
 const eduDeskAdditional = [eduDesk , eduDeskTask, eduDeskChildTask, eduDeskChat];
-const leafAdditional = [leaf, chatify, bitsOfCode];
+const rescue = [rescueLogo, rescue1, rescue2, rescue3];
 const blogAdditional = [bitsOfCode, chatify, leaf];
 const editorAdditional = [editor, chatify, bitsOfCode];
 
@@ -61,7 +63,7 @@ function ProjectsHome() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={eduDesk}
               isBlog={false}
               title="edu-Desk"
               description="EduDesk is a monitoring solution for schools computers , ensuring digital security and academic integrity. It detects threats, prevents cheating, and tracks student engagement—all while keeping data private and secure."
@@ -85,23 +87,26 @@ function ProjectsHome() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={rescueLogo}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview."
-              fullDescription="Editor.io is a versatile online code and markdown editor that supports a wide range of features for developers and writers. Built with React.js, it offers a seamless coding experience with instant previews, syntax highlighting, and support for HTML, CSS, and JavaScript. The markdown editor includes features like GFM support, custom HTML tags, and a toolbar for easy formatting."
-              technologies={["React.js", "JavaScript", "HTML", "CSS", "Markdown", "GFM"]}
+              title="RescueAI"
+              description="RescueAI is an AI-powered voice assistant that optimizes emergency response by managing and prioritizing calls with real-time intelligence."
+              fullDescription="RescueAI enhances Morocco’s emergency services by reducing wait times and improving call management through AI-driven automation.
+I t detects caller emotions, prioritizes urgent cases, and provides structured incident reports to assist human operators.
+With multilingual support in French and English, it ensures accessibility and efficiency in critical situations.
+Integrated with telecom systems, RescueAI revolutionizes emergency response, ultimately saving lives. 🚀"
+              technologies={["React.js", "JavaScript", "Twilio", "Retell", "Google Maps Geocoding API", "Gemini 2"]}
               features={[
-                "Online code editor with instant preview",
-                "Support for HTML, CSS, and JavaScript",
-                "Markdown editor with GFM support",
-                "Custom HTML tags and toolbar",
-                "Syntax highlighting and code completion",
-                "Responsive design for mobile and desktop"
-              ]}
+                 "AI-powered voice agent for structured incident reporting",
+                "Emotion detection for prioritizing urgent cases",
+                "Multilingual support (French & English) for accessibility",
+                "Seamless integration with Morocco's telecom infrastructure",
+                "Real-time decision support for emergency operators",
+                "Optimized call management to reduce response times"
+                  ]}
               additionalImages={editorAdditional}
-              ghLink="https://github.com/ayoub0030/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              ghLink="https://github.com/ayoub0030/AiVoiceAgent/blob/main/Readme.md"
+              demoLink="https://youtu.be/WhHe-JSVAeQ"
             />
           </Col>
         </Row>
